@@ -1,6 +1,6 @@
 import { MiddlewareHandler } from "hono";
-import Links from "../../models/link";
-import { getDatabase } from "../../utils/db";
+import Links from "../models/link";
+import { getDatabase } from "../utils/db";
 
 export const REDIRECT_KEY = "shortlink";
 

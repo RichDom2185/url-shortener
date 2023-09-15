@@ -1,9 +1,9 @@
 {
   "name": "url-shortener",
-  "module": "src/index.ts",
+  "module": "src/index.tsx",
   "type": "module",
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot src/index.tsx"
   },
   "devDependencies": {
     "bun-types": "latest"

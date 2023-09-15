@@ -13,5 +13,6 @@ app.notFound((c) => c.html(<NotFound />));
 app.get("/", (c) => c.html(<LandingPage />));
 app.get("/new", (c) => c.html(<ComingSoon />));
 app.post("/new", Links.handleCreateForm);
+app.post("/:shortlink/unlock", Links.handleUnlockForm);
 
 export default app;

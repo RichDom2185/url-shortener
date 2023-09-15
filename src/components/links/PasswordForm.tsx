@@ -6,7 +6,7 @@ type Props = {
 
 const PasswordForm: FC<Props> = ({ shortlink }) => {
   return (
-    <form method="POST" action={`/${shortlink}/open`}>
+    <form method="POST" action={`/${shortlink}/unlock`}>
       <input type="password" name="password" placeholder="Password" />
       <button type="submit">Unlock</button>
     </form>

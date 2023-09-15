@@ -1,9 +1,10 @@
 import { handleRead } from "./get";
-import { handleCreateForm } from "./post";
+import { handleCreateForm, handleUnlockForm } from "./post";
 
 const Links = {
   handleRead,
   handleCreateForm,
+  handleUnlockForm,
 };
 
 export default Links;

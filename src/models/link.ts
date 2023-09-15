@@ -20,18 +20,6 @@ const exists = (db: Database, shortlink: string): boolean => {
   return getByShortLink(db, shortlink) !== null;
 };
 
-const isOpen = (link: Link): boolean => {
-  return link.open_at === null || link.open_at <= Date.now();
-};
-
-const isExpired = (link: Link): boolean => {
-  return link.close_at !== null && link.close_at <= Date.now();
-};
-
-const isProtected = (link: Link): boolean => {
-  return link.password !== null;
-};
-
 const create = (db: Database, link: Omit<Link, "id">): void => {
   return db
     .prepare(
@@ -49,9 +37,6 @@ const create = (db: Database, link: Omit<Link, "id">): void => {
 const Links = {
   getByShortLink,
   exists,
-  isOpen,
-  isExpired,
-  isProtected,
   create,
 };
 

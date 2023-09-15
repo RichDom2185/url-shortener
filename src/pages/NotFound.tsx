@@ -1,9 +1,11 @@
 import { FC } from "hono/jsx";
+import NavBar from "../components/NavBar";
 import Page from "../components/Page";
 
 const NotFound: FC = () => {
   return (
     <Page title="Not Found">
+      <NavBar />
       <header class="container">
         <hgroup>
           <h1>404 Not Found</h1>

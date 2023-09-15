@@ -1,4 +1,5 @@
 import { FC } from "hono/jsx";
+import Footer from "../components/Footer";
 import Icon from "../components/Icon";
 import NavBar from "../components/NavBar";
 import Page from "../components/Page";
@@ -61,6 +62,7 @@ const LandingPage: FC = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </Page>
   );
 };

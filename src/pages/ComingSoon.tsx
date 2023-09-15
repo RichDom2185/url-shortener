@@ -1,4 +1,5 @@
 import { FC } from "hono/jsx";
+import Footer from "../components/Footer";
 import Icon from "../components/Icon";
 import NavBar from "../components/NavBar";
 import Page from "../components/Page";
@@ -21,6 +22,7 @@ const ComingSoon: FC = () => {
           </a>
         </p>
       </header>
+      <Footer />
     </Page>
   );
 };

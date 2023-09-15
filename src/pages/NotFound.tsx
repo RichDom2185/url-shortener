@@ -1,4 +1,5 @@
 import { FC } from "hono/jsx";
+import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import Page from "../components/Page";
 
@@ -15,6 +16,7 @@ const NotFound: FC = () => {
           </p>
         </hgroup>
       </header>
+      <Footer />
     </Page>
   );
 };

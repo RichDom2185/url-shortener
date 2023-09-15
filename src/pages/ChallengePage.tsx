@@ -1,5 +1,6 @@
 import { html } from "hono/html";
 import { FC } from "hono/jsx";
+import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import Page from "../components/Page";
 import NotOpenChallenge from "../components/links/NotOpenChallenge";
@@ -49,6 +50,7 @@ const ChallengePage: FC<Props> = ({ link, reason }) => {
       <main class="container">
         <ChallengeComponent link={link} />
       </main>
+      <Footer />
     </Page>
   );
 };

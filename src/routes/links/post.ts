@@ -1,6 +1,7 @@
 import { Context } from "hono";
 import { getDatabaseFromContext } from "../../middleware/db";
 import Links, { Link } from "../../models/link";
+import { PARAM_KEY } from "./types";
 
 export const handleCreateForm = async (c: Context) => {
   // TODO: Add validation
@@ -21,7 +22,7 @@ export const handleCreateForm = async (c: Context) => {
 export const handleUnlockForm = async (c: Context) => {
   // TODO: Add validation
   const { password } = await c.req.parseBody();
-  const shortlink = c.req.param("shortlink");
+  const shortlink = c.req.param(PARAM_KEY);
   const db = getDatabaseFromContext(c);
   const link = Links.getByShortLink(db, shortlink);
   if (!link) {

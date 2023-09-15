@@ -17,6 +17,7 @@ const Page: FC<Props> = ({ title, children }) => {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
         />
+        <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
         <title>${pageTitle}</title>
       </head>
       <body>

@@ -1,12 +1,11 @@
 import { Context } from "hono";
+import { getDatabaseFromContext } from "../../middleware/db";
 import Links, { Link } from "../../models/link";
-import { getDatabase } from "../../utils/db";
 
 export const handleCreateForm = async (c: Context) => {
   // TODO: Add validation
   const data = await c.req.parseBody();
-  // TODO: Inject DB to request context instead
-  const db = getDatabase();
+  const db = getDatabaseFromContext(c);
   const linkData = data as unknown as Omit<Link, "id">;
   linkData.password = linkData.password
     ? Bun.password.hashSync(linkData.password)
@@ -23,8 +22,7 @@ export const handleUnlockForm = async (c: Context) => {
   // TODO: Add validation
   const { password } = await c.req.parseBody();
   const shortlink = c.req.param("shortlink");
-  // TODO: Inject DB to request context instead
-  const db = getDatabase();
+  const db = getDatabaseFromContext(c);
   const link = Links.getByShortLink(db, shortlink);
   if (!link) {
     return c.notFound();

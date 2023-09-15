@@ -7,7 +7,7 @@ const NotFound: FC = () => {
   return (
     <Page title="Not Found">
       <NavBar />
-      <header class="container">
+      <main class="container">
         <hgroup>
           <h1>404 Not Found</h1>
           <p>
@@ -15,7 +15,7 @@ const NotFound: FC = () => {
             <a href="/">Back to home.</a>
           </p>
         </hgroup>
-      </header>
+      </main>
       <Footer />
     </Page>
   );

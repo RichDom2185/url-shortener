@@ -8,7 +8,7 @@ const ComingSoon: FC = () => {
   return (
     <Page title="Coming Soon">
       <NavBar />
-      <header class="container">
+      <main class="container">
         <hgroup>
           <h1>
             <Icon icon="twemoji:construction" />
@@ -21,7 +21,7 @@ const ComingSoon: FC = () => {
             Take me back to where I came from!
           </a>
         </p>
-      </header>
+      </main>
       <Footer />
     </Page>
   );

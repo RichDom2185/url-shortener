@@ -22,30 +22,42 @@ const LandingPage: FC = () => {
       <main class="container">
         <div class="grid">
           <div>
-            <Icon icon="fa6-solid:bolt" color="#ffb636" />
-            <h4>
-              It's <em>fast</em>
-            </h4>
+            <h3 style={{ fontWeight: 400 }}>
+              <Icon icon="fa6-solid:bolt" color="#ffb636" />
+              <br />
+              It's{" "}
+              <strong>
+                <em>fast</em>
+              </strong>
+            </h3>
             <p>
               Powered by the Bun runtime and Hono as the web framework, requests
               are processed at blazing fast speeds.
             </p>
           </div>
           <div>
-            <Icon icon="fa6-solid:paintbrush" color="#c084fc" />
-            <h4>
-              It's <em>customizable</em>
-            </h4>
+            <h3 style={{ fontWeight: 400 }}>
+              <Icon icon="fa6-solid:paintbrush" color="#c084fc" />
+              <br />
+              It's{" "}
+              <strong>
+                <em>customizable</em>
+              </strong>
+            </h3>
             <p>
               Create your own easy-to-remember links, password-protect them, or
               even set them to automatically open at a specified time.
             </p>
           </div>
           <div>
-            <Icon icon="fa6-solid:unlock-keyhole" color="#22c55e" />
-            <h4>
-              It's <em>secure</em>
-            </h4>
+            <h3 style={{ fontWeight: 400 }}>
+              <Icon icon="fa6-solid:unlock-keyhole" color="#22c55e" />
+              <br />
+              It's{" "}
+              <strong>
+                <em>secure</em>
+              </strong>
+            </h3>
             <p>
               Passwords are encrypted and cannot be seen by anyone, even us.
               Once links are deleted<sup>1</sup>, they are permanently gone.

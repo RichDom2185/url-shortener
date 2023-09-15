@@ -18,6 +18,21 @@ const Page: FC<Props> = ({ title, children }) => {
           href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
         />
         <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+        <style>
+          :root {
+            --spacing: 0.5rem;
+          }
+
+          .container-fluid,
+          .container {
+            padding-left: calc(2 * var(--spacing));
+            padding-right: calc(2 * var(--spacing));
+          }
+
+          body > main {
+            --block-spacing-vertical: calc(4 * var(--spacing));
+          }
+        </style>
         <title>${pageTitle}</title>
       </head>
       <body>

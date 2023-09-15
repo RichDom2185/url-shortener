@@ -16,6 +16,7 @@ const MIGRATIONS: readonly string[] = [
     "open_at" INTEGER,
     "close_at" INTEGER
   )`,
+  `ALTER TABLE "links" ADD COLUMN "private" INTEGER NOT NULL DEFAULT 0`,
 ];
 
 const migrateDatabase = () => {

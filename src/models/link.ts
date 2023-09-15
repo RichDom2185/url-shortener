@@ -5,6 +5,7 @@ export type Link = {
   id: number;
   shortlink: string;
   link: string;
+  private: number;
   password: Maybe<string>;
   open_at: Maybe<number>;
   close_at: Maybe<number>;
@@ -23,11 +24,12 @@ const exists = (db: Database, shortlink: string): boolean => {
 const create = (db: Database, link: Omit<Link, "id">): void => {
   return db
     .prepare(
-      "INSERT INTO links (shortlink, link, password, open_at, close_at) VALUES ($shortlink, $link, $password, $open_at, $close_at)"
+      "INSERT INTO links (shortlink, link, private, password, open_at, close_at) VALUES ($shortlink, $link, $private, $password, $open_at, $close_at)"
     )
     .run({
       $shortlink: link.shortlink,
       $link: link.link,
+      $private: link.private,
       $password: link.password,
       $open_at: link.open_at,
       $close_at: link.close_at,

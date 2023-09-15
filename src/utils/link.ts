@@ -9,7 +9,7 @@ const isExpired = (link: Link): boolean => {
 };
 
 const isProtected = (link: Link): boolean => {
-  return link.password !== null;
+  return link.private !== 0;
 };
 
 export const BlockReason = {

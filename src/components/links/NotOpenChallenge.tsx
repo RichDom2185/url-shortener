@@ -13,7 +13,8 @@ const NotOpenChallenge: FC<Props> = ({ link }) => {
     <article style={{ marginTop: 0, marginBottom: 0 }}>
       <hgroup>
         <h1>
-          <Icon icon="svg-spinners:clock" />
+          <Icon inline icon="svg-spinners:clock" />
+          &nbsp; <small>Patience is a virtue</small>
         </h1>
         <p>
           Please wait until {unblockTime.toLocaleString()}, then reload the

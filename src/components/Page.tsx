@@ -32,6 +32,22 @@ const Page: FC<Props> = ({ title, children }) => {
           body > main {
             --block-spacing-vertical: calc(4 * var(--spacing));
           }
+
+          body > footer {
+            --block-spacing-vertical: calc(2.5 * var(--spacing));
+          }
+
+          .grid {
+            --grid-spacing-horizontal: calc(3 * var(--spacing));
+          }
+
+          article {
+            --block-spacing-horizontal: calc(3.5 * var(--spacing));
+          }
+
+          input {
+            --spacing: 1rem;
+          }
         </style>
         <title>${pageTitle}</title>
       </head>

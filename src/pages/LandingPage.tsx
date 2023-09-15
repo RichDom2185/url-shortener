@@ -25,7 +25,7 @@ const LandingPage: FC = () => {
             <h3 style={{ fontWeight: 400 }}>
               <Icon icon="fa6-solid:bolt" color="#ffb636" />
               <br />
-              It's{" "}
+              It is{" "}
               <strong>
                 <em>fast</em>
               </strong>
@@ -39,7 +39,7 @@ const LandingPage: FC = () => {
             <h3 style={{ fontWeight: 400 }}>
               <Icon icon="fa6-solid:paintbrush" color="#c084fc" />
               <br />
-              It's{" "}
+              It is{" "}
               <strong>
                 <em>customizable</em>
               </strong>
@@ -53,7 +53,7 @@ const LandingPage: FC = () => {
             <h3 style={{ fontWeight: 400 }}>
               <Icon icon="fa6-solid:unlock-keyhole" color="#22c55e" />
               <br />
-              It's{" "}
+              It is{" "}
               <strong>
                 <em>secure</em>
               </strong>
@@ -64,11 +64,9 @@ const LandingPage: FC = () => {
             </p>
             <small>
               <small>
-                <small>
-                  <sup>1</sup>&nbsp;Links created anonymously are automatically
-                  deleted after 24 hours. To manually delete or persist links,
-                  an account is required.
-                </small>
+                <sup>1</sup>&nbsp;Links created anonymously are automatically
+                deleted after 24 hours. To manually delete or persist links, an
+                account is required.
               </small>
             </small>
           </div>

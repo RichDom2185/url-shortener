@@ -3,15 +3,13 @@ import { AUTHOR_SITE } from "../utils/constants";
 
 const Footer: FC = () => {
   return (
-    <footer class="container-fluid">
+    <footer class="container-fluid" style={{ opacity: 0.6 }}>
       <center>
         <small>
-          <small>
-            &copy; 2023&nbsp;
-            <a href={AUTHOR_SITE} target="_blank" rel="noopener noreferrer">
-              Richard Dominick
-            </a>
-          </small>
+          &copy; 2023&nbsp;
+          <a href={AUTHOR_SITE} target="_blank" rel="noopener noreferrer">
+            Richard Dominick
+          </a>
         </small>
       </center>
     </footer>

@@ -1,15 +1,19 @@
 # url-shortener
 
-To install dependencies:
+Simple, fast, secure and customisable URL shortener.
 
-```bash
-bun install
-```
+Built using:
 
-To run:
+* [Bun](https://bun.sh)
+* [TypeScript](https://typescriptlang.org)
+* [Hono](https://hono.dev)
+* [PicoCSS](https://picocss.com)
+* [Iconify](https://iconify.design)
 
-```bash
-bun run index.ts
-```
+## Features
 
-This project was created using `bun init` in bun v1.0.0. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+* Custom link names
+* Schedule links to open/expire at certain timings
+  * Wait time can be bypassed by a password
+* Password protected links
+* Encrypted password storage

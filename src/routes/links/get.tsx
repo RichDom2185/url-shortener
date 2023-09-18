@@ -5,11 +5,12 @@ import ChallengePage from "../../pages/ChallengePage";
 import { getLinkStatus } from "../../utils/link";
 import { PARAM_KEY } from "./types";
 
-export const handleRead = async (c: Context) => {
+export const handleRead = (c: Context) => {
   const shortlink = c.req.param(PARAM_KEY);
 
   const db = getDatabaseFromContext(c);
   if (!Links.exists(db, shortlink)) {
+    c.status(404);
     return c.notFound();
   }
 

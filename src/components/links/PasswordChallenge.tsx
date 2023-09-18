@@ -11,7 +11,7 @@ const PasswordChallenge: FC<Props> = ({ link }) => {
   return (
     <article style={{ marginTop: 0, marginBottom: 0 }}>
       <hgroup>
-        <h1 style={{ display: "inline" }}>
+        <h1>
           <Icon inline icon="ic:round-password" />
         </h1>
         <h3>Enter the password below:</h3>

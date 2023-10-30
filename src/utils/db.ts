@@ -14,10 +14,10 @@ const MIGRATIONS: readonly string[] = [
     "shortlink" TEXT NOT NULL UNIQUE,
     "link" TEXT NOT NULL,
     "password" TEXT,
+    "private" INTEGER NOT NULL DEFAULT 0,
     "open_at" INTEGER,
     "close_at" INTEGER
   )`,
-  `ALTER TABLE "links" ADD COLUMN "private" INTEGER NOT NULL DEFAULT 0`,
 ];
 
 const migrateDatabase = () => {

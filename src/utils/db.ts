@@ -1,10 +1,11 @@
 import { Database } from "bun:sqlite";
+import { DATABASE_URL } from "./constants";
 import { Maybe } from "./types";
 
 let db: Maybe<Database> = null;
 
 const createDatabase = () => {
-  db = new Database(":memory:");
+  db = new Database(DATABASE_URL);
 };
 
 const MIGRATIONS: readonly string[] = [

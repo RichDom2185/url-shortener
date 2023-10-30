@@ -1,6 +1,7 @@
 import { FC } from "hono/jsx";
 import Footer from "../components/Footer";
 import Icon from "../components/Icon";
+import Link from "../components/Link";
 import NavBar from "../components/NavBar";
 import Page from "../components/Page";
 
@@ -12,10 +13,10 @@ const LandingPage: FC = () => {
         <center>
           <h1>Fast, customizable URL shortener.</h1>
           <p>
-            <a href="/new" role="button">
+            <Link to="/new" role="button">
               Create your first short URL&nbsp;
               <Icon inline icon="tabler:arrow-right" trailing />
-            </a>
+            </Link>
           </p>
         </center>
       </header>

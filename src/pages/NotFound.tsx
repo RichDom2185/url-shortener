@@ -1,5 +1,6 @@
 import { FC } from "hono/jsx";
 import Footer from "../components/Footer";
+import Link from "../components/Link";
 import NavBar from "../components/NavBar";
 import Page from "../components/Page";
 
@@ -12,7 +13,7 @@ const NotFound: FC = () => {
           <h1>404 Not Found</h1>
           <p>
             Hmm&hellip; I can't seem to find what you're looking for.&nbsp;
-            <a href="/">Back to home.</a>
+            <Link to="/">Back to home.</Link>
           </p>
         </hgroup>
       </main>

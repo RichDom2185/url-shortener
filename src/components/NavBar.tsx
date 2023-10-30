@@ -2,6 +2,7 @@ import { html } from "hono/html";
 import { FC } from "hono/jsx";
 import { SITE_REPOSITORY, SITE_TITLE } from "../utils/constants";
 import Icon from "./Icon";
+import Link from "./Link";
 
 const NavBar: FC = () => {
   return (
@@ -27,7 +28,7 @@ const NavBar: FC = () => {
       </script>`}
       <ul>
         <li>
-          <a href="/" class="contrast">
+          <Link to="/" class="contrast">
             <Icon
               inline
               icon="line-md:arrow-right-circle-twotone"
@@ -35,7 +36,7 @@ const NavBar: FC = () => {
             />
             &nbsp;
             <strong>{SITE_TITLE}</strong>
-          </a>
+          </Link>
         </li>
       </ul>
       <ul>
